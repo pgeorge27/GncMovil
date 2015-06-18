@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>GncMovil</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/filtro.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.3.1.min.css" />
+	<link rel="stylesheet" href="../css/herbaMobil.css" />
+	<script type="text/javascript" src="../js/cordova.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-migrate-1.1.0.js"></script>
+	<script type="text/javascript" src="../js/json2html.js"></script>
+	<script type="text/javascript" src="../js/jquery.json2html.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/gncMovil.js"></script>
+	<script type="text/javascript" src="../js/prueba.js"></script>
+	<script type="text/javascript" src="../js/share.js"></script>
+</head>
+
+<body onload="obtenerProductoEspanol()">
+	<div data-role="page" id="producto" data-theme="e" class="cambio" >
+		<header data-theme="e" data-role="header" data-position="fixed" data-toogle="false">
+			<h1>GncMovil</h1>
+			<a id="volver" data-role="button" data-rel="back" data-icon="arrow-l">Volver</a>
+			<a href="#right-panel" data-icon="bars" id="icon"
+			class="ui-btn-right" data-iconpos="left">Menu</a>
+		</header>
+
+
+		<div data-role="content" align="center">
+
+			<div id='attrTest2'>
+					<ul id="listado-productos2" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow"></ul>
+				</div>
+
+			<h2 id="nombre-val" class="field"></h2>
+			<div id="foto-cont">
+				<div id="foto-val"></div>
+			</div>
+
+			<div id="contentDescripcion" class="cambio" data-role="collapsible" data-theme="g" data-content-theme="f"
+			data-collapsed="false">
+			<h4>Descripci&oacute;n</h4>
+
+			<div id="descripcion-val" class="field"></div>
+		</div>
+
+		
+<p><strong>Serias tan amable de recomendarnos</strong>
+<a class="compartir" class="cambio" data-role="button" data-mini="true"
+class="ui-icon-alt" data-inline="true" data-icon="info"
+data-theme="g">Recomendar</a></p>
+
+<p>
+	<small>Informaci&oacute;n: <a
+						href="http://www.gnc.cr/">www.gnc.cr</a></small>
+	</p>
+
+</div>
+<!-- /content -->
+<div data-role="panel" data-position="right"
+data-position-fixed="true" data-display="overlay" data-theme="f"
+id="right-panel">
+<ul data-role="listview" data-theme="f" class="nav-search">
+	<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
+	<li><a data-ajax="false" href="acercaDe.html"> <img
+		src="../imagenes/menu/icon.png">
+		<h2>Acerca De</h2>
+	</a></li>
+				<li><a href="http://www.facebook.com/GNC.cr"> <img
+					src="../imagenes/menu/facebook.png">
+					<h2>FaceBook</h2>
+				</a></li>
+				<li><a href="https://twitter.com/GNC_CostaRica"> <img
+					src="../imagenes/menu/twitter.png">
+					<h2>Twitter</h2>
+				</a></li>
+				<li><a href="market://details?id=org.gstechnology.pay.gncmovil"> <img
+					src="../imagenes/menu/estrellas.png">
+					<h2>Valorar esta App</h2>
+				</a></li>
+				<li><a href="market://search?q=pub:GSTechnology"><img
+					src="../imagenes/menu/play_logo.png">
+					<h2>Más App</h2>
+				</a></li>
+</ul>
+</div>
+<!-- /panel -->
+<!-- /panel -->
+</div>
+<!-- /page -->
+
+
+</body>
+
+</html>

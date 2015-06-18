@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>GncMovil</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/filtro.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.3.1.min.css" />
+	<link rel="stylesheet" href="../css/herbaMobil.css" />
+	<script type="text/javascript" src="../js/cordova.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-migrate-1.1.0.js"></script>
+	<script type="text/javascript" src="../js/json2html.js"></script>
+	<script type="text/javascript" src="../js/jquery.json2html.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/gncMovil.js"></script>
+	<script type="text/javascript" src="../js/prueba.js"></script>
+	<script type="text/javascript" src="../js/share.js"></script>
+</head>
+
+<body onload=cargarProductosEspanol();>
+	<div data-role="page" data-theme="e" id="producto">
+		<header data-theme="e" data-role="header" data-position="fixed" data-toogle="false">
+			<h1>GncMovil</h1>
+			<a href="#right-panel" data-icon="bars" id="icon"
+			class="ui-btn-right" data-iconpos="left">Menu</a>
+		</header>
+
+		<div data-role="content" align="center">
+			<select data-native-menu="false" id="categoria"
+			onChange="getData(this);">
+				<option value="1">Antioxidantes</option>
+				<option value="2">Articulaciones</option>
+				<option value="3">Aumento de Peso</option>
+				<option value="4">Belleza y Cuidado Personal</option>
+				<option value="5">Colesterol y Trigliceridos</option>
+				<option value="6">Definición Muscular</option>
+				<option value="7">Desintoxicación y Limpieza</option>
+				<option value="8">Diabétes</option>
+				<option value="9">Digestión</option>
+				<option value="10">Energía</option>
+				<option value="11">Envejecimiento Saludable</option>
+				<option value="12">Huesos</option>
+				<option value="13">Masa Muscular</option>
+				<option value="14">Memoria y Concentración</option>
+				<option value="15">Menopausia</option>
+				<option value="16">Ojos</option>
+				<option value="17">Perdida de Peso</option>
+				<option value="18">Próstata</option>
+				<option value="19">Pre-Entrenamiento</option>
+				<option value="20">Recuperación</option>
+				<option value="21">Salud Cardioavascular</option>
+				<option value="22">Sexualidad</option>
+				<option value="23">Sistema Inmunológico</option>
+				<option value="24">Sueño y Relajación</option>
+			</select>
+	
+				<div id='attrTest'>
+					<ul id="listado-productos2" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow"></ul>
+				</div>
+
+				<p><strong>Serias tan amable de recomendarnos</strong>
+				<a class="compartir" data-role="button" data-mini="true"
+				class="ui-icon-alt" data-inline="true" data-icon="info"
+				data-theme="g">Recomendar</a></p>
+
+				<p>
+					<small>Informaci&oacute;n: <a
+						href="http://www.gnc.cr/">www.gnc.cr</a></small>
+					</p>
+
+				</div>
+				<!-- /content -->
+
+				<div data-role="panel" id="right-panel" data-position="right"
+				data-position-fixed="true" data-display="overlay" data-theme="f"
+				id="right-panel">
+				<ul data-role="listview" data-theme="f" class="nav-search">
+					<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
+					<li><a data-ajax="false" href="acercaDe.html"> <img
+						src="../imagenes/menu/icon.png">
+						<h2>Acerca De</h2>
+					</a></li>
+				<li><a href="http://www.facebook.com/GNC.cr"> <img
+					src="../imagenes/menu/facebook.png">
+					<h2>FaceBook</h2>
+				</a></li>
+				<li><a href="https://twitter.com/GNC_CostaRica"> <img
+					src="../imagenes/menu/twitter.png">
+					<h2>Twitter</h2>
+				</a></li> 
+				<li><a href="market://details?id=org.gstechnology.pay.gncmovil"> <img
+					src="../imagenes/menu/estrellas.png">
+					<h2>Valorar esta App</h2>
+				</a></li>
+				<li><a href="market://search?q=pub:GSTechnology"><img
+					src="../imagenes/menu/play_logo.png">
+					<h2>Más App</h2>
+				</a></li>
+				</ul>
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- /page -->
+
+	</body>
+	</html>
